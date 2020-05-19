@@ -1,0 +1,101 @@
+@font-face{
+    font-family: 'starwars';
+    src: url('fonts/starwars.ttf');
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+}
+.side-nav{
+    height: 100vh;
+    min-width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444447;
+    color: #ffffff;
+    border-right: 1px solid rgb(122, 122, 122);
+}
+.hamburguer{
+    margin: 2rem 0 4rem 0;
+}
+#categoria{
+    height: 5rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 10px solid #ffffff; 
+}
+#categoria h2{
+    font-size: 1.8rem;
+}
+.category{
+    height: 5rem;
+    width: 100%;
+    border-bottom: 2px solid rgb(122, 122, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.banner{
+    background-image: url("/img/starwars1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.banner img{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+.content{
+    max-width: 800px;
+    margin-top: 10vh;
+    height: 50%;
+    max-height: 70%;
+    color: #ffffff;
+}
+.content h1{
+    padding: 4rem 0 0 6rem;
+    font-family: 'starwars';
+    font-size: 6rem;
+}
+.content p{
+    font-size: 2.5rem;
+    padding: 0 6rem;
+}
+.film-list{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.arrow{
+    color: #ffffff;
+}
+.film-item{
+    background-color: #ffffff;
+    margin: 5px;
+    height: 15rem;
+    width: 18%;
+    background-image: url('https://images4.alphacoders.com/573/thumb-1920-57394.jpg');
+    background-size: cover;
+}
+.film-item h3{
+    padding-top: 10%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffffff;
+}

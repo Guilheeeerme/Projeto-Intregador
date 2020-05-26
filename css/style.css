@@ -2,7 +2,10 @@
     font-family: 'starwars';
     src: url('fonts/starwars.ttf');
 }
-
+body, html{
+    height: 100%;
+    width: 100%;
+}
 *{
     border: 0;
     margin: 0;
@@ -11,10 +14,14 @@
 }
 .body{
     display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
 }
 .side-nav{
-    height: 100vh;
-    min-width: 10%;
+    height: 100%;
+    width: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,24 +51,18 @@
     font-size: 1.5rem;
 }
 .banner{
-    background-image: url("/img/starwars1280.jpg");
+    background-image: url("../img/starwars1024.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.banner img{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-}
 .content{
     max-width: 800px;
-    margin-top: 10vh;
+    padding-top: 10vh;
     height: 50%;
     max-height: 70%;
     color: #ffffff;
@@ -69,33 +70,53 @@
 .content h1{
     padding: 4rem 0 0 6rem;
     font-family: 'starwars';
-    font-size: 6rem;
+    font-size: 4em;
 }
 .content p{
     font-size: 2.5rem;
     padding: 0 6rem;
 }
 .film-list{
-    height: 50vh;
+    margin-top: 10rem;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 .arrow{
     color: #ffffff;
+    width: 10%;
 }
 .film-item{
     background-color: #ffffff;
-    margin: 5px;
-    height: 15rem;
+    padding: 5px;
+    height: 50%;
     width: 18%;
     background-image: url('https://images4.alphacoders.com/573/thumb-1920-57394.jpg');
     background-size: cover;
 }
-.film-item h3{
+.film-item p{
     padding-top: 10%;
-    font-size: 2.5rem;
+    font-size: 1em;
     text-align: center;
     color: #ffffff;
+}
+@media (max-width: 600px){
+    .side-nav{
+        display: none;
+    }
+    .banner{
+        background-position: right;
+    }
+    .content h1{
+        font-size: 50px;
+        padding: 10px;
+    }
+    .content p{
+        padding: 10px;
+    }
+    .list-item{
+        height: 100%;
+    }
 }

@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <title>DH Films</title>
 
@@ -39,27 +42,63 @@
                 <h1>STARWARS</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
             </div>
-            <main class="film-list">
-                <!-- <i class="fas fa-chevron-left fa-3x arrow"></i> -->
+
+            <div class="slide-wrapper film-list">
                 <div class="film-item">
-                    <p>TITULO</p>
+                    <div class="slide-item">1</div>
                 </div>
                 <div class="film-item">
-                    <p>TITULO</p>
+                    <div class="slide-item">2</div>
                 </div>
                 <div class="film-item">
-                    <p>TITULO</p>
+                    <div class="slide-item">3</div>
                 </div>
                 <div class="film-item">
-                    <p>TITULO</p>
+                    <div class="slide-item">4</div>
                 </div>
                 <div class="film-item">
-                    <p>TITULO</p>
+                    <div class="slide-item">1</div>
                 </div>
-                <!-- <i class="fas fa-chevron-right fa-3x arrow"></i> -->
-            </main>
+                <div class="film-item">
+                    <div class="slide-item">2</div>
+                </div>
+                <div class="film-item">
+                    <div class="slide-item">3</div>
+                </div>
+                <div class="film-item">
+                    <div class="slide-item">4</div>
+                </div>
+            </div>
+
         </section>
+
+
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script>
+        var slider = tns({
+            container: '.slide-wrapper',
+            items: 4,
+            gutter: 0, 
+            edgePadding: 0, 
+   
+            autoplay: true,
+            speed: 1000,
+            autoplayTimeout: 1500,
+            autoplayDirection: 'forward',
+            autoplayHoverPause: true, // mouse em cima o item para o loop
+            autoplayButtonOutput: false, // importante
+
+            controls: false, // botões prev and next
+
+            arrowKeys: true, // permite usar setas
+            mouseDrag: true
+            
+        });
+    </script>
+
 </body>
 
 </html>

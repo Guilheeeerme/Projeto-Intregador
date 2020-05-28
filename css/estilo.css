@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-@import url(//db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS);
+@import url('//db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS');
 @font-face {font-family: "STARWARS"; src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg"); }
 
 
@@ -67,7 +67,7 @@ ul {
 }
 
 .background {
-    background-image: url(/img/starwars1920.jpg);
+    background-image: url('../img/starwars1920.jpg');
     width: 100%;
     height: 100%;
     background-size: cover;

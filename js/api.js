@@ -33,7 +33,8 @@ async function genresFilm(genero) {
             card.innerHTML +=
             `
             <div class="card l">
-                <img src="https://image.tmdb.org/t/p/w185/${poster}" alt="">
+                <img src="https://image.tmdb.org/t/p/w185/${poster}" alt="Movie">
+                <span class="nameMovie">Nome do filme (ano) </span>
             </div>
         `
         }

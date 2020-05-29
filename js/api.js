@@ -2,7 +2,7 @@ const baseUrl = 'https://api.themoviedb.org/3/';
 const apiKey = "d6ecb4865ebe46ec907e193a6b5c1c19";
 const subMenu = document.getElementById("homeSubmenu");
 const card = document.querySelector(".cards");
-const genreHeader = document.getElementById("genre");
+const headerGenre = document.getElementById("headerGenre");
 //https://api.themoviedb.org/3/discover/movie?api_key=###&with_genres=28
 
 //genre/movie/list
@@ -32,11 +32,11 @@ async function genresFilm(genero) {
         if(poster != null){
             card.innerHTML +=
             `
-            <div class="card l">
-                <img src="https://image.tmdb.org/t/p/w185/${poster}" alt="Movie">
-                <span class="nameMovie">Nome do filme (ano) </span>
-            </div>
-        `
+                <div class="card l">
+                    <img src="https://image.tmdb.org/t/p/w185/${poster}" alt="${element.title}">
+                    <span class="nameMovie">${element.title}</span>
+                </div>
+            `
         }
     });
 }

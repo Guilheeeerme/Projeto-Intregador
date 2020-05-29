@@ -29,11 +29,13 @@ async function genresFilm(genero) {
     const films = result.results;
     films.forEach(element => {
         const poster = element.poster_path;
-        card.innerHTML +=
+        if(poster != null){
+            card.innerHTML +=
             `
             <div class="card l">
                 <img src="https://image.tmdb.org/t/p/w185/${poster}" alt="">
             </div>
         `
+        }
     });
 }

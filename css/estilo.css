@@ -103,6 +103,7 @@ ul {
     top:0;
     left:0;
     right:0;
+    width: 100%;
   }
   
   .slider::-webkit-scrollbar {
@@ -162,4 +163,15 @@ footer {
 
 .nameMovie {
     color: white;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 576px) {
+    .slider .cards {
+        display: inline-block;
+        width: 82%;
+        align-items: center;
+    }
 }

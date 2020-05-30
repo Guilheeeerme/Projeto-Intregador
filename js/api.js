@@ -3,6 +3,9 @@ const apiKey = "d6ecb4865ebe46ec907e193a6b5c1c19";
 const subMenu = document.getElementById("homeSubmenu");
 const card = document.querySelector(".cards");
 const headerGenre = document.getElementById("headerGenre");
+const backgroundImg = document.querySelector(".background");
+const titleFilm = document.getElementById("title");
+const descricao = document.getElementById("descricao");
 //https://api.themoviedb.org/3/discover/movie?api_key=###&with_genres=28
 
 //genre/movie/list
@@ -27,16 +30,24 @@ async function genresFilm(genero) {
     const response = await fetch(url);
     const result = await response.json();
     const films = result.results;
+   
     films.forEach(element => {
+        console.log(element);
         const poster = element.poster_path;
-        if(poster != null){
+        if(poster !== null){
             card.innerHTML +=
             `
                 <div class="card l">
-                    <img src="https://image.tmdb.org/t/p/w185/${poster}" alt="${element.title}">
+                    <img src="https://image.tmdb.org/t/p/w185${poster}" alt="${element.title}" onclick="getBanner('${element.title}', '${element.overview}', '${element.poster_path}')">
                     <span class="nameMovie">${element.title}</span>
                 </div>
             `
         }
     });
+}
+function getBanner(title, overview, poster){
+    titleFilm.innerHTML = `<h2>${title}<h2>`;
+    descricao.innerHTML= `<p>${overview}<p>`
+    backgroundImg.style.backgroundImage = `url(https://image.tmdb.org/t/p/original${poster})`;
+    backgroundImg.style.backgroundSize = "scale-down";
 }

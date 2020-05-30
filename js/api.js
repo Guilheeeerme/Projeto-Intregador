@@ -38,7 +38,7 @@ async function genresFilm(genero) {
             card.innerHTML +=
             `
                 <div class="card l">
-                    <img src="https://image.tmdb.org/t/p/w185${poster}" alt="${element.title}" onclick="getBanner('${element.title}', '${element.overview}', '${element.poster_path}')">
+                    <img src="https://image.tmdb.org/t/p/w185${poster}" alt="${element.title}" ondblclick="getBanner('${element.title}', '${element.overview}', '${element.poster_path}')">
                     <span class="nameMovie">${element.title}</span>
                 </div>
             `

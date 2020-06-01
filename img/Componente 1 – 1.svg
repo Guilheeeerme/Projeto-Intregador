@@ -1,0 +1,9 @@
+<svg id="Componente_1_1" data-name="Componente 1 – 1" xmlns="http://www.w3.org/2000/svg" width="692.667" height="443.749" viewBox="0 0 692.667 443.749">
+  <g id="electronics" transform="translate(0 31)">
+    <path id="Caminho_1" data-name="Caminho 1" d="M447.2,0H48.1A48.154,48.154,0,0,0,0,48.1V364.647a48.154,48.154,0,0,0,48.1,48.1H447.2a48.158,48.158,0,0,0,48.1-48.1V48.1A48.158,48.158,0,0,0,447.2,0Zm0,0"/>
+    <path id="Caminho_2" data-name="Caminho 2" d="M328.906,252.961l165.3,90.247V31.981l-165.3,90.247Zm0,0" transform="translate(198.46 19.297)"/>
+  </g>
+  <text id="D" transform="translate(127 234)" fill="#fff" font-size="250" font-family="LeagueGothic-Regular, League Gothic"><tspan x="0" y="0">D</tspan></text>
+  <text id="H" transform="translate(167 365)" fill="#ff3b3b" font-size="230" font-family="LeagueGothic-Regular, League Gothic"><tspan x="0" y="0">H</tspan></text>
+  <text id="FILMS" transform="translate(220 227)" fill="#fff" font-size="150" font-family="SixCaps, Six Caps"><tspan x="0" y="0">FILMS</tspan></text>
+</svg>

@@ -1,7 +1,6 @@
-let slider = document.querySelector('.slider');
-
+let slider = document.getElementById("cards");
 if (slider) {
-	let card = document.querySelector('.slider');
+	let card = document.querySelector('#cards');
     let isDown = false;
     let startX;
     let scrollLeft;

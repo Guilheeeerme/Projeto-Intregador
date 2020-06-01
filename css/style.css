@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    background-color: #ccc!important;
+}
+iframe{
+    width:560px; 
+    height:315px; 
+}
+.row{
+    height: 100%;
+    margin: 0!important;
+}
+.col-10{
+    height: 100%;
+    color: white;
+}
+.content{
+    max-height: 50%;
+    background-color: rgb(50, 50, 50, 80%);
+    padding: 10px;
+}
+.content h1{
+    font-size: 2em;
+}
+.flex-columns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.side-nav{
+    background-color: #797979;
+    color: white;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    padding: 0!important;
+    font-weight: bold;
+    box-shadow: 5px 1px 5px 0px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+.side-nav::-webkit-scrollbar {
+    display: none;
+  }
+.categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,0.75);
+    padding: 10px;
+    box-shadow: 5px 1px 5px 0px rgba(0,0,0,0.75);
+}
+.categorias img{
+    width: 60%;
+    margin-bottom: 50px;
+}
+.col-2{
+    height: 100%;
+}
+.generos-item{
+    border-bottom: 2px solid white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.genrer:hover{
+    cursor: pointer;
+}
+.cards{
+    padding: 0!important;
+    display: flex;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.cards::-webkit-scrollbar {
+    display: none;
+  }
+.card-item{
+    color: white;
+    margin-left: 10px;
+    width: 50vw;
+    height: 30vh;
+    min-width: 20vw;
+    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.card-item:hover{
+    transform: scale(0.9);
+}
+.card-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#background{
+    background-size: 100% 100%;
+}
+@media (max-width: 900px){
+    .content h1{
+        font-size: 1.5em;
+    }
+    .card-item{
+        min-width: 50vw;
+    }
+    #background{
+        background-size: cover;
+        background-position: center;
+    }
+    .generos-item span{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 600px){
+    .categorias span{
+        word-break: break-all;
+        font-size: 1rem;
+    }
+    .generos-item{
+        height: 10%;
+    }
+    .generos-item span{
+        padding: 2px;
+        font-size: 0.8rem;
+        word-break: break-all;
+    }
+    #descricao{
+        display: none;
+    }
+    .descricao-filme{
+        display: none;
+    }
+    iframe{
+        position: absolute;
+        width:100%; 
+        height:50vh; 
+    }
+    
+    .content{
+        max-height: 35%;
+    }
+}

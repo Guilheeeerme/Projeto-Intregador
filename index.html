@@ -4,98 +4,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>DH Filmes</title>
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/cameralogo.svg" type="image/x-icon">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/estilo.css">
-
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script>
-
-    <link href="//db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS" rel="stylesheet"
-        type="text/css" />
 
 </head>
 
 
 <body>
+    <div class="row">
+        <div class="col-2 side-nav" id="side-nav">
+            <div class="categorias">
+                <img src="img/cameralogo.svg" alt="">
+                <span>Categorias:</span>
+            </div>
+            <div class="generos">
 
-    <header>
-        <div class="wrapper">
-            <!-- Sidebar -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <h3>DH Filmes</h3>
-                </div>
-
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu" 
-                        data-toggle="collapse" 
-                        aria-expanded="true"
-                        class="dropdown-toggle">
-                        Categorias
-                        </a>
-                    </li>
-                    <ul class="list-unstyled collapse show" id="homeSubmenu">
-                        <!-- GENRES LIST -->
-                    </ul>
-                </ul>
-            </nav>
-
-            <div class="background">
-                <div class="filme">
-                    <div class="categoria">
-                        <div class="cat">
-                            <div class="ct">
-                                <p>Categoria:</p>
-                            </div>
-                            <p id="headerGenre">Aleatório</p>
-                        </div>
-                    </div>
-                    <h1 id="title">Star Wars</h1>
-                    <p id="descricao">A princesa Leia é mantida refém pelas forças imperiais comandadas por Darth Vader. Luke Skywalker
-                        e o capitão Han Solo precisam libertá-la e restaurar a liberdade e a justiça na galáxia.
-                    </p>
-                </div>
-
-                <div class="outros">
-                    <h3>Veja outras sugestões:</h3>
-                </div>
             </div>
         </div>
-    </header>
+        <div class="col-10 flex-columns" id="background">
+            <div class="content">
+                <div id="titulo">
+                    <h3>Veja os melhores filmes:</h3>
+                </div>
+                <div id="descricao">
+                    <span>Conteudos perfeitos para voce</span>
+                </div>
+                <span id="link-youtube">
 
-    <div class="slider">
-        <div class="cards">
-            <!-- FILMS CARD API -->
+                </span>
+                <div id="button-modal">
+
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cards">
+
+            </div>
         </div>
     </div>
-    <footer>
-
-    </footer>
-<!-- jQuery CDN - Slim version (=without AJAX) -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<!-- Popper.JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
     integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
     crossorigin="anonymous"></script>
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-<script src="js/api.js"></script>
-<script src="js/script.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

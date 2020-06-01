@@ -28,8 +28,7 @@ async function searchGenres() {
 searchGenres();
 
 
-
-//movie/genres
+///movie/genres
 async function genresFilm(genero) {
     cards.innerHTML = "";
     const url = `${baseUrl}discover/movie?api_key=${apiKey}&with_genres=${genero}&language=pt-BR`;

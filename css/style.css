@@ -8,6 +8,9 @@
 body{
     background-color: #ccc!important;
 }
+header{
+    background-color: #5a5a5a;
+}
 iframe{
     width:560px; 
     height:315px; 
@@ -21,12 +24,29 @@ iframe{
     color: white;
 }
 .content{
+    height: auto;
     max-height: 50%;
     background-color: rgb(50, 50, 50, 80%);
     padding: 10px;
 }
 .content h1{
     font-size: 2em;
+}
+#descricao{
+    border-top-color: white;
+    height: 100px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.buttons{
+    align-items: center;
+    display: flex;
+}
+#link-youtube{
+    margin-left: 5px;
+}
+#youtube-icon{
+    color: red;
 }
 .flex-columns{
     display: flex;
@@ -67,6 +87,10 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.generos-item:hover{
+    background-color: rgba(0,0,0,0.75);
+    opacity: 0.8;
 }
 .genrer:hover{
     cursor: pointer;
@@ -128,12 +152,6 @@ iframe{
         padding: 2px;
         font-size: 0.8rem;
         word-break: break-all;
-    }
-    #descricao{
-        display: none;
-    }
-    .descricao-filme{
-        display: none;
     }
     iframe{
         position: absolute;

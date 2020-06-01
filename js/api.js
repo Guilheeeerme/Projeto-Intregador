@@ -61,7 +61,7 @@ async function getBanner(title, overview, poster, idfilme) {
     const result = await response.json();
     const youtube = result.results[0].key;
 
-    linkYoutube.innerHTML = `<a href="https://www.youtube.com/watch?v=${youtube}" target="_blank">Assistir Trailer no youtube</a>`
+    linkYoutube.innerHTML = `<a href="https://www.youtube.com/watch?v=${youtube}" target="_blank"><i class="fab fa-youtube fa-3x" id="youtube-icon"></i></a>`
     titulo.innerHTML = `<h1 clas="titulo-filme">${title}<h1>`;
     descricao.innerHTML = `<span class="descricao-filme">${overview}<span>`;
     background.style.backgroundImage = `url(https://image.tmdb.org/t/p/original${poster})`;

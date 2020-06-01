@@ -38,6 +38,9 @@ iframe{
     overflow-y:scroll;
     overflow-x:hidden;
 }
+#descricao::-webkit-scrollbar {
+    display: none;
+  }
 .buttons{
     align-items: center;
     display: flex;
@@ -160,6 +163,6 @@ iframe{
     }
     
     .content{
-        max-height: 35%;
+        max-height: 60%;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,12 +23,16 @@
                 <img src="img/cameralogo.svg" alt="">
                 <span>Gêneros:</span>
             </div>
-            <div class="generos">
+            <div class="input-group">
+                <input type="text" name="search" id="search" placeholder="Pesquise um filme">
+                <input type="button" id="button" value="Procurar Filme">
+            </div>
+            <div class="generos" id="generos">
             </div>
         </div>
-        
+
         <div class="col-10 flex-columns" id="background">
-           
+
             <div class="content">
                 <div id="titulo">
                     <h3>Veja os melhores filmes:</h3>
@@ -40,7 +45,7 @@
 
                     </div>
                     <span id="link-youtube">
-    
+
                     </span>
                 </div>
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -63,9 +68,9 @@
         crossorigin="anonymous"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-    crossorigin="anonymous"></script>
-    
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
@@ -73,7 +78,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <script src="js/api.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>

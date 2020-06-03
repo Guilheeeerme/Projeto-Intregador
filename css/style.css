@@ -218,6 +218,9 @@ iframe{
     }
 }
 @media (max-width: 600px){
+    .flex-columns{
+        padding: 0!important;
+    }
     .generos{
         height: 10%;
     }

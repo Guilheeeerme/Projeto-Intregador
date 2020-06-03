@@ -25,6 +25,10 @@ async function searchGenres() {
                 </div>
             `
     });
+    sideNav.innerHTML += ` 
+    <div class="generos-item">
+        <span class="genrer" name="filmes" onclick="topFilms()">Top filmes do dia</span>
+    </div>`
 }
 searchGenres();
 
@@ -85,5 +89,26 @@ async function getBanner(title, overview, poster, idfilme) {
                 allowfullscreen>
             </iframe>
         `
+
+}
+
+async function topFilms() {
+    cards.innerHTML = "";
+    const url = `${baseUrl}trending/movie/day?api_key=${apiKey}&language=pt-BR`;
+    const response = await fetch(url);
+    const result = await response.json();
+    const titles = result.results;
+    titles.forEach(element => {
+        const backdrop = element.backdrop_path;
+        element.overview = element.overview.replace(/[\"']/g, "");
+        if (element.backdrop_path) {
+            cards.innerHTML +=
+                `
+                <div class="card-item">
+                    <img src="https://image.tmdb.org/t/p/w300${element.poster_path}" alt="${element.title}" onclick="getBanner('${element.title}', '${element.overview}', '${backdrop}' ,'${element.id}')">
+                </div>
+               `
+        }
+    });
 
 }

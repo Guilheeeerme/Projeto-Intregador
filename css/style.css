@@ -221,6 +221,9 @@ iframe{
     .flex-columns{
         padding: 0!important;
     }
+    .content{
+        margin: 10px;
+    }
     .generos{
         height: 10%;
     }

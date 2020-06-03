@@ -52,6 +52,7 @@ async function genresFilm(genero) {
         }
     });
 }
+genresFilm(28);
 
 // movie{movie_id}/videos
 async function getBanner(title, overview, poster, idfilme) {
@@ -67,8 +68,6 @@ async function getBanner(title, overview, poster, idfilme) {
     background.style.backgroundImage = `url(https://image.tmdb.org/t/p/original${poster})`;
     background.style.backgroundRepeat = "no-repeat";
     background.style.backgroundPosition = "center";
-
-
 
     buttonModal.innerHTML =
         `

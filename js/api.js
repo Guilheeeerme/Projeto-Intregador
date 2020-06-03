@@ -9,6 +9,7 @@ const linkYoutube = document.getElementById("link-youtube");
 const buttonModal = document.getElementById("button-modal");
 const iframeYoutube = document.querySelector(".modal-content");
 //https://api.themoviedb.org/3/discover/movie?api_key=###&with_genres=28
+const gen = document.getElementById("navbarSupportedContent");
 
 //genre/movie/list
 async function searchGenres() {

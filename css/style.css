@@ -215,4 +215,31 @@ iframe{
     .content{
         max-height: 60%;
     }
+
+    .categorias img {
+
+        width: 100%;
+        margin: 0;
+
+    }
+    .card-item {
+        max-width: 40%;
+        max-height: 100%;
+    }
+
+    .card-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .col-2 {
+        flex: 0 0 30%!important;
+        max-width: 30%!important;
+    }
+
+    .col-10 {
+        flex: 0 0 70%!important;
+        max-width: 70%!important;
+    }
 }

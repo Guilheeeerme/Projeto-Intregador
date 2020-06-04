@@ -151,6 +151,8 @@ iframe{
     height: 40px;
     background-color: rgba(0,0,0,0.75);
     color: white;
+    margin: 0.5rem;
+    border-radius: 8px;
 }
 .input-group #button:hover{
     background-color: rgba(216, 216, 216, 0.75);

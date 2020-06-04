@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Oxygen:wght@400;700&display=swap');
+*{
+    font-family: 'Cabin Condensed', sans-serif;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header img{
+    width: 250px;
+}
+#arrow{
+    margin-right: 50px;
+    color: #0aabef;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imgs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 .row:after {
     content:"";
     display:table;
